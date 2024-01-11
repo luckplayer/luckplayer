@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>条形码</title>
+        <script type="text/javascript" src="resource/jquery.min.js"></script> 
+        <script type="text/javascript" src="resource/JsBarcode.all.js"></script> 
+        <style>
+          /**@page样式是用来设置打印机打印出来的样式，例如设置小票外边距样式**/
+          @page {
+            margin: 10px;
+          }
+          #print {
+            width: 274px;
+            margin: 0 auto;
+            border: 1px solid red;
+            font-size: 18px;
+          }
+          #imgcode {
+            width: 274px;
+            margin: 0 auto;
+          }
+        </style>
+    </head>
+    <body id="print">
+        <canvas id="imgcode"></canvas> 
+        <div style="width: 100%;text-align: center;">富士康红苹果</div>
+        
+        <script>
+            $(function(){
+                $("#imgcode").JsBarcode("123124531dfafdf",{fontSize: '30px'});
+            })
+        </script> 
+    </body>
+</html>

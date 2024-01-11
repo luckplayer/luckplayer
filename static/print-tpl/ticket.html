@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>小票</title>
+        <script type="text/javascript" src="resource/jquery.min.js"></script> 
+        <style>
+          /**@page样式是用来设置打印机打印出来的样式，例如设置小票外边距样式**/
+          @page {
+            margin: 10px;
+          }
+          #print {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 12px;
+            padding-bottom: 10px;
+          }
+          p {
+              margin: 0;
+              padding: 0;
+          }
+          td {
+              padding-right: 10px;
+          }
+          .title {
+            font-size: 26px;
+            font-weight: 500;
+          }
+          .sub-title {
+            margin:20px 0;
+          }
+          .table {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .table .thead td {
+            padding: 5px 0;
+            margin-bottom: 5px;
+            border-top: 1px dashed black;
+            border-bottom: 1px dashed black;
+          }
+          .table .tbody{
+            margin: 10px 0;
+          }
+          .total {
+            font-size: 18px;
+            font-weight: 400;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        </style>
+    </head>
+    <body id="print">
+        <div style="width: 100%;text-align: center;">
+            <p class="title">ASIA REPUESTOS SPA</p>
+
+            <div class="sub-title">
+                <P>ASIA</P>
+                <P>CARMEN 766</P>
+                <P>SANTIAGO</P>
+                <P>CIF:76582837-6</P>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead class="thead">
+                <td>CAN.</td>
+                <td>PRE.</td class="border-top">
+                <td>DESCRIPCION</td>
+                <td>SUMA</td class="border-top">
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqarh</td>
+                    <td>3000000,00</td>
+                </tr>
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqar</td>
+                    <td>3000000,00</td>
+                </tr>
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqarh bqeth</td>
+                    <td>3000000,00</td>
+                </tr>
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqarh bqeth</td>
+                    <td>3000000,00</td>
+                </tr>
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqarh bqeth</td>
+                    <td>3000000,00</td>
+                </tr>
+                <tr>
+                    <td>100X</td>
+                    <td>3000000,00</td>
+                    <td>dsfadf qwegqarh bqeth</td>
+                    <td>3000000,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="border-top: 1px dashed black;text-align: center;">
+                        <p class="total">1 ARTIC. TOTAL:&nbsp;&nbsp;3000000,00 Euro</p>
+                        <p>EFECTIVO:&nbsp;&nbsp;3000000,00&nbsp;&nbsp;&nbsp;CAMBIO:&nbsp;0,00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="padding-top: 10px;">
+                        <p>No:&nbsp;&nbsp;13513541561&nbsp;&nbsp;&nbsp;24-12-2019&nbsp;&nbsp;16:20:45</p>
+                        <p>ATENDINO POR:&nbsp;&nbsp;CAJA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: center;padding-top: 15px;">
+                        <p>IVA INCLUIDO</p>
+                        <p>GRACIAS POR SU VISITA</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div style="width: 335px;">.</div>
+
+    </body>
+</html>
